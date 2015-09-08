@@ -180,7 +180,7 @@ public class SquareTrouble {
     }
 
     /**
-     * check if win or tie and display message respectfully
+     * display chess board matrix
      */
     private void displayResult() {
         System.out.println("-------------------------------------------------");
