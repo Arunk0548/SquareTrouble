@@ -115,7 +115,7 @@ public class SquareTrouble {
     private boolean addMove(String x, byte position) {
         byte row = (byte) ((position - 1) / 3);
         byte col = (byte) ((position - 1) % 3);
-        if (chessboard[row][col].equals("O") || chessboard[row][col].equals("O")) {
+        if (chessboard[row][col].equals("X") || chessboard[row][col].equals("O")) {
             System.out.println("Invalid position, position is already selected by other player, Please try again!");
             return false;
         }
