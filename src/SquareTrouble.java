@@ -113,6 +113,11 @@ public class SquareTrouble {
      * @return
      */
     private boolean addMove(String x, byte position) {
+		if (!(position >= 1 && position <= N * N)) {
+            System.out.println("Invalid position, please enter position from [1-9]");
+            return false;
+        }
+		
         byte row = (byte) ((position - 1) / 3);
         byte col = (byte) ((position - 1) % 3);
         if (chessboard[row][col].equals("X") || chessboard[row][col].equals("O")) {
